@@ -1,0 +1,9 @@
+<!ELEMENT	contacts	(contact+)>
+<!ELEMENT	contact		(name, email, phone, department)>
+
+<!ELEMENT	name		(#PCDATA)>
+<!ELEMENT	email		(#PCDATA)>
+<!ELEMENT	phone		(#PCDATA)>
+<!ELEMENT	department	(#PCDATA)>
+	<!ATTLIST department
+		manager		(yes | no) "no">

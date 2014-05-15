@@ -1,0 +1,31 @@
+body {
+background: #e0e0e0;
+font-family: verdana;
+}
+
+form {
+border: 2px dashed silver;
+background: #d0d0d0;
+margin: 0 auto;
+text-align: center;
+}
+
+form p.float {
+float: left;
+width: 250px;
+margin: 10px 10px;
+}
+
+label {
+display: block;
+}
+
+form p#cost_calc_note {
+clear: both;
+text-align: left;
+color: navy;
+}
+
+ol {
+text-align: left;
+}

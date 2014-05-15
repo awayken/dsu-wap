@@ -1,0 +1,136 @@
+html,
+body {
+	background: #eee;
+	font-family: verdana, arial, sans-serif;
+	font-size: 11px;
+}
+
+.pattern {
+	background: url(pattern.jpg);
+}
+
+/*###################
+  ##  Banner.html  ##
+  ###################*/
+
+#banner h1 {
+	font-family: verdana, arial, sans-serif;
+	color: #909090;
+}
+
+#nav {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+#nav a:link,
+#nav a:visited {
+	color: #909090;
+	text-decoration: none;
+	border-bottom: 2px solid silver;
+}
+
+#nav a:hover,
+#nav a:active {
+	color: #606060;
+	border-bottom: 1px solid gray;
+}
+
+/*############
+   ##  footer.html   ##
+   ############*/
+
+#footer a:link,
+#footer a:visited {
+	color: #069;
+	text-decoration: none;
+}
+
+#footer a:hover,
+#footer a:active {
+	border-bottom: 2px solid #069;
+}
+   
+/*############
+   ##    main.html    ##
+   ############*/
+   
+#main {
+	color: #911;
+}
+
+#main a:link,
+#main a:visited {
+	color: #000;
+	font-weight: bold;
+}
+
+#main a:hover,
+#main a:active {
+	color: #333;
+	text-decoration: none;
+}
+
+#main dl {
+	border-bottom: 1px solid silver;
+	width: 500px;
+	float: left;
+}
+
+#main dl dt {
+	font-size: 14px;
+	color: black;
+	border-bottom: 1px solid silver;
+}
+
+#main dl dd {
+	border-left: 1px solid silver;
+	padding: 2px 0 3px 2px;
+}
+
+/*###############
+   ##   screenshots.html   ##
+   ###############*/
+
+#screenshots {
+	color: #119;
+}
+
+#screenshots a:link,
+#screenshots a:visited {
+	color: #333;
+	font-weight: bold;
+}
+
+#screenshots a:hover,
+#screenshots a:active {
+	color: #666;
+	text-decoration: none;
+}
+
+/*###############
+   ##  benchmarks.html  ##
+   ###############*/
+
+#benchmarks {
+	color: #191;
+}
+
+#benchmarks table {
+	width: 450px;
+	padding: 10px;
+	margin: 5px;
+	height: 200px;
+	float: left;
+	border: 1px solid black;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/css" href="contacts.css"?>
+<!DOCTYPE contacts SYSTEM "contacts.dtd">
+<contacts>
+	<contact>
+		<name>Jim Sleek</name>
+		<email>JSleek&#64;TLSales.com</email>
+		<phone>18001234567</phone>
+		<department>sales</department>
+	</contact>
+	<contact>
+		<name>Anna Gold</name>
+		<email>AGold&#64;TLSales.com</email>
+		<phone>18001234567</phone>
+		<department manager="yes">sales</department>
+	</contact>
+	<contact>
+		<name>Terry White</name>
+		<email>TWhite&#64;TLSales.com</email>
+		<phone>18001234567</phone>
+		<department>sales</department>
+	</contact>
+	<contact>
+		<name>Nancy Nice</name>
+		<email>NNice&#64;TLSales.com</email>
+		<phone>15151234567</phone>
+		<department>custsrv</department>
+	</contact>
+	<contact>
+		<name>Frank Hire</name>
+		<email>Hire&#64;TLSales.com</email>
+		<phone>15151234568</phone>
+		<department>emplrel</department>
+	</contact>
+	<contact>
+		<name>Linda McKinnon</name>
+		<email>McKinnon&#64;TLSales.com</email>
+		<phone>18002345678</phone>
+		<department>president</department>
+	</contact>
+</contacts>

@@ -1,0 +1,82 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Miles Rausch" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	
+<script type="text/javascript" language="javascript">
+<!--
+function get_radio_value(radio_name)
+{
+var radio_buttons = document["quiz_form"][radio_name];
+for (i=0; i < radio_buttons.length; i++)
+{
+	if (radio_buttons[i].checked)
+		return radio_buttons[i].value;
+}
+return false;
+}
+
+function calculate_quiz()
+{
+// Question 1
+var score = 0;
+if (get_radio_value('question1') == "drippy")
+	score++;
+if (get_radio_value('question2') == "drizzle")
+	score++;
+if (get_radio_value('question3') == "nathan")
+	score++;
+if (get_radio_value('question4') == "warlock")
+	score++;
+if (get_radio_value('question5') == "err")
+	score++;
+
+alert("Your score is " + score + ".\nGood job!");
+}
+//-->
+</script>
+	
+<title>Cartoon Quiz</title>
+</head>
+<body>
+<h1>Cartoon Quiz</h1>
+<p>Answer these five quiz questions about the cartoon Aqua Teen Hunger Force, on Cartoon Network's [adult swim].</p>
+
+<form id="quiz_form" name="quiz_form">
+<ol>
+<li>What was the name of the mold-born guest character in Season 1?<br />
+<input type="radio" name="question1" value="moldy" /> Moldy<br />
+<input type="radio" name="question1" value="flavor_flav" /> Flavor Flav<br />
+<input type="radio" name="question1" value="drippy" /> Ol' Drippy</li>
+
+<li>What superhero identity did Master Shake take on in "Super Hero"?<br />
+<input type="radio" name="question2" value="drizzle" /> The Drizzle<br />
+<input type="radio" name="question2" value="super_master_shake" /> Super Master Shake<br />
+<input type="radio" name="question2" value="cup" /> Cup</li>
+
+<li>When Meatwad gets a snake for his birthday, what does he name it?<br />
+<input type="radio" name="question3" value="master_shake" /> Master Shake<br />
+<input type="radio" name="question3" value="mickey_mouse" /> Mickey Mouse<br />
+<input type="radio" name="question3" value="nathan" /> Nathan Scott Philips</li>
+
+<li>Frylock is part box of fries, part what?<br />
+<input type="radio" name="question4" value="warlock" /> Warlock<br />
+<input type="radio" name="question4" value="gorlock" /> Gorlock<br />
+<input type="radio" name="question4" value="monster" /> Monster</li>
+
+<li>The two Mooninites are named Ignignokt and what?<br />
+<input type="radio" name="question5" value="emery" /> Flargon<br />
+<input type="radio" name="question5" value="err" /> Err<br />
+<input type="radio" name="question5" value="dp" /> D to the P</li>
+</ol>
+
+<input type="button" onclick="calculate_quiz()" value="Grade Quiz" />
+<input type="reset" value="Clear Form" />
+</form>
+</body>
+</html>

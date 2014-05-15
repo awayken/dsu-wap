@@ -1,0 +1,52 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Miles Rausch" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	
+<script type="text/javascript" language="javascript">
+<!--
+function calculate_cost()
+{
+var carpet_width = document.carpet_form.carpet_width.value;
+var carpet_length = document.carpet_form.carpet_length.value;
+var carpet_cost = document.carpet_form.carpet_cost.value;
+var total_size = 0;
+var total_cost = 0;
+
+total_size = 1.25*(carpet_width*carpet_length);
+total_cost = total_size*carpet_cost;
+
+alert("The total cost is $" + total_cost);
+}
+
+//-->
+</script>
+	
+<title>Carpet Cost</title>
+</head>
+<body onload="document.getElementById(carpet_width).focus()">
+<h1>Carpet Costs</h1>
+<p>Use the form below to calculate the cost of your carpet.  Because calculators are costly and confusing computer creatures.</p>
+
+<form id="carpet_form" name="carpet_form" onsubmit="calculate_cost()">
+<p class="float"><label for="carpet_width">Room Width</label>
+<input type="text" id="carpet_width" />ft.</p>
+
+<p class="float"><label for="carpet_length">Room Length</label>
+<input type="text" id="carpet_length" />ft.</p>
+
+<p class="float"><label for="carpet_cost">Cost</label>
+$<input type="text" id="carpet_cost" />/sq ft.</p>
+
+<p id="cost_calc_note">Click the Calculate button below.</p>
+
+<input type="submit" value="Calculate Cost" />
+<input type="reset" value="Clear Form" />
+</form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!--
+Miles Rausch
+CIS275
+Assignment 4
+//-->
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Miles Rausch" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	
+<script type="text/javascript" language="javascript">
+<!--
+function setup()
+{
+
+ball = new Array(8);
+ball[0] = new Image();
+ball[0].src="baskballImages/basketball0.gif";
+
+ball[1] = new Image();
+ball[1].src="baskballImages/basketball1.gif";
+
+ball[2] = new Image();
+ball[2].src="baskballImages/basketball2.gif";
+
+ball[3] = new Image();
+ball[3].src="baskballImages/basketball3.gif";
+
+ball[4] = new Image();
+ball[4].src="baskballImages/basketball4.gif";
+
+ball[5] = new Image();
+ball[5].src="baskballImages/basketball3.gif";
+
+ball[6] = new Image();
+ball[6].src="baskballImages/basketball2.gif";
+
+ball[7] = new Image();
+ball[7].src="baskballImages/basketball1.gif";
+
+i = 0;
+timerID = null;
+
+clearTimeout(timerID);
+
+}
+
+function animate()
+{
+if (i < 7)
+    i++;
+else
+    i = 0;
+document.animate_form.basketball.src = ball[i].src
+timerID = setTimeout("animate()", 100);
+}
+
+//-->
+</script>
+	
+<title>Dribble</title>
+</head>
+<body>
+<h1>Dribble</h1>
+<p>You wanna see some cool animation?</p>
+
+<form id="animate_form" name="animate_form">
+
+<img name="basketball" src="baskballImages/basketball0.gif" alt="A basketball that bounces when you click the buttons." />
+
+<input type="button" onclick="setup(); animate();" value="Start" />
+<input type="button" onclick="clearTimeout(timerID)" value="Stop" />
+</form>
+</body>
+</html>

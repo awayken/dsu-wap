@@ -1,0 +1,75 @@
+<!--
+Miles Rausch
+CIS275
+Assignment 4
+//-->
+
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Miles Rausch" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	
+<script type="text/javascript" language="javascript">
+<!--
+function setup()
+{
+
+wind = new Array(6);
+wind[0] = new Image();
+wind[0].src="windmillImages/windmill0.gif";
+
+wind[1] = new Image();
+wind[1].src="windmillImages/windmill1.gif";
+
+wind[2] = new Image();
+wind[2].src="windmillImages/windmill2.gif";
+
+wind[3] = new Image();
+wind[3].src="windmillImages/windmill3.gif";
+
+wind[4] = new Image();
+wind[4].src="windmillImages/windmill4.gif";
+
+wind[5] = new Image();
+wind[5].src="windmillImages/windmill5.gif";
+
+i = 0;
+timerID = null;
+
+clearTimeout(timerID);
+
+}
+
+function animate()
+{
+if (i < 5)
+    i++;
+else
+    i = 0;
+document.animate_form.windmill.src = wind[i].src
+timerID = setTimeout("animate()", 25);
+}
+
+//-->
+</script>
+	
+<title>Windy</title>
+</head>
+<body>
+<h1>Windy</h1>
+<p>You wanna see some cool animation?</p>
+
+<form id="animate_form" name="animate_form">
+
+<img name="windmill" src="windmillImages/windmill0.gif" alt="A windmill that rotates when you click the buttons." />
+
+<input type="button" onclick="setup(); animate();" value="Start" />
+<input type="button" onclick="clearTimeout(timerID)" value="Stop" />
+</form>
+</body>
+</html>
